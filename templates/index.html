@@ -12,7 +12,7 @@
 </header>
 <article>
   {{ article.summary }}
-  <p><a href="{{ SITEURL }}/{{ article.url }}" id="page-title"><u>Read more...</u></a></p>
+  <p><a href="{{ SITEURL }}/{{ article.url }}" id="page-title"><u>read more...</u></a></p>
 </article>
 {% if loop.length > 1 %}
 <section id="article-list">
@@ -21,7 +21,7 @@
     {% endif %}
     {# other items #}
     {% else %} 
-    <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permanent link to {{ article.title|striptags }}">{{ article.title }}</a></li>
+    <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="permanent link to {{ article.title|striptags }}">{{ article.title }}</a></li>
     {% endif %}
     {% endfor %}
   </ol>

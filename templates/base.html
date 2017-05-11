@@ -22,11 +22,10 @@
       <footer>
         <nav>
           <ul>
-            <li><a href="https://blog.getpelican.com/">Pelican</a></li>
             {% for page in pages %}
-            <li> :: <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>{% if not loop.last %}{% endif %}</li>
+            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>{% if not loop.last %}{% endif %} :: </li>
             {% endfor %}
-            <li> :: <a href="{{ SITEURL }}/archives.html">archives</a></li>
+            <li><a href="{{ SITEURL }}/archives.html">archives</a></li>
             {% if categories|length > 1 %}
             <li> :: <a href="{{ SITEURL }}/categories.html">categories</a></li>
             {% endif %}
